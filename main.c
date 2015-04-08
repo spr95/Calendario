@@ -59,7 +59,7 @@ int main(void)
              if (bis==1)
                 fprintf(stdout, "The chosen year is a leap year.\n");
             else
-                fprintf(stdout,"The chosen year is not a leap year..\n");
+                fprintf(stdout,"The chosen year is not a leap year.\n");
     break;
     case 3: fprintf(stdout, "Le jour de Pâques selon le calendrier grégorien est le %u%c%u.\n",Pas.GP,'/',Pas.MP);
 	    fprintf(stdout, "Le jour de Pâques selon le calendrier julien est le %u%c%u.\n",PasO.GP,'/',PasO.MP);
@@ -75,6 +75,8 @@ int main(void)
     break;
     default:return -1;
   }
+  
+  Prossimi_Uguali(&n,&lin);
   
   return 0;
 }

@@ -454,4 +454,43 @@ int CalcoloSettimana(int *g, int *m, int *a)
         return 1;
     else 
         return (n/7)+1; //In questo algoritmo d è il giorno della settimana e f+1 il numero ordinale dell'anno in corso.
+        
+}
+
+void Prossimi_Uguali(int *a, int *lin)
+
+{
+    if(*lin==1)
+    {
+    if((*a%4)==0)
+        printf("I prossimi anni uguali a quello inserito sono il %d e il %d.\n", *a+28,*a+(28*2));
+    if(((*a-1)%4)==0)
+        printf("I prossimi anni uguali a quello inserito sono il %d, il %d e il %d.\n", *a+6,*a+17,*a+28);
+    if(((*a-2)%4)==0)
+        printf("I prossimi anni uguali a quello inserito sono il %d, il %d e il %d.\n", *a+11,*a+17,*a+28);
+    if(((*a-3)%4)==0)
+        printf("I prossimi anni uguali a quello inserito sono il %d, il %d e il %d.\n", *a+11,*a+22,*a+28);
+    }
+ else if(*lin==2)
+   {
+    if((*a%4)==0)
+        printf("The next years equal to the inserted year are the %d and the %d.\n", *a+28,*a+(28*2));
+    if(((*a-1)%4)==0)
+        printf("The next years equal to the inserted year are the %d, the %d and the %d.\n", *a+6,*a+17,*a+28);
+    if(((*a-2)%4)==0)
+        printf("The next years equal to the inserted year are the %d, the %d and the %d.\n", *a+11,*a+17,*a+28);
+    if(((*a-3)%4)==0)
+        printf("The next years equal to the inserted year are the %d, the %d and the %d.\n", *a+11,*a+22,*a+28);
+    }
+ else if(*lin==3)
+    {
+    if((*a%4)==0)
+        printf("Les années à venir égal à celui entré sont le %d et le %d.\n", *a+28,*a+(28*2));
+    if(((*a-1)%4)==0)
+        printf("Les années à venir égal à celui entré sont le %d, le %d et le %d.\n", *a+6,*a+17,*a+28);
+    if(((*a-2)%4)==0)
+        printf("Les années à venir égal à celui entré sont le %d, le %d et le %d.\n", *a+11,*a+17,*a+28);
+    if(((*a-3)%4)==0)
+        printf("Les années à venir égal à celui entré sont le %d, le %d et le %d.\n", *a+11,*a+22,*a+28);
+    }
 }

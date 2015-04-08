@@ -39,5 +39,7 @@ extern long long GiornoGiulianoG( int *g, int *m, int *a);
 
 extern int CalcoloSettimana(int *g, int *m, int *a);
 
+extern void Prossimi_Uguali(int *a, int *lin);
+
 
 #endif /*CALENDARIO_H*/
