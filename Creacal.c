@@ -7,7 +7,7 @@ void creacal(int *giorni, int *gsett, int *mesi, int *bis, int *a)
     printf("Calendario del %d\n",*a);
     
     printf("Gennaio\n");
-    printf("Lu\tMa\tMe\tGi\tVe\Sa\tDo\n");
+    printf("Lu\tMa\tMe\tGi\tVe\tSa\tDo\n");
     
     for(i=1;i<=mesi[1];i++)
     {
@@ -28,7 +28,7 @@ void creacal(int *giorni, int *gsett, int *mesi, int *bis, int *a)
              if(gsett[i]==6)
                  printf("\t\t\t\t%d\t",giorni[i]);
         }
-         i++
+		 i++;
     }
      
 }
