@@ -2,9 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include"Calendario.h"
-
-extern void creacal(int *giorni, int *gsett, int *mesi, int *bis, int *a);
-extern void assegnamenti(int *i, int *n, int *giorni, int *gsett, int *a);
+#include"Creacal.h"
 
 int main(void)
 {
@@ -28,7 +26,7 @@ int main(void)
         gsett=realloc(gsett,n*sizeof(int));
     }
     
-	assegnamenti(&i, &n, giorni, gsett, &a);
+    assegnamenti(&i, &n, giorni, gsett, &a);
     
     creacal(giorni,gsett,mesi,&bis,&a);
     

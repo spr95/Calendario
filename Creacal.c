@@ -28,7 +28,15 @@ void creacal(int *giorni, int *gsett, int *mesi, int *bis, int *a)
              if(gsett[i]==6)
                  printf("\t\t\t\t%d\t",giorni[i]);
         }
-		 i++;
+		 
+        if(giorni[i]>1)
+        {
+            if(gsett[i]==1)
+                printf("%d\n",giorni[i]);
+            else
+                printf("%d\t",giorni[i]);
+        }
+        
     }
      
 }

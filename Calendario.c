@@ -494,3 +494,22 @@ void Prossimi_Uguali(int *a, int *lin)
         printf("Les années à venir égal à celui entré sont le %d, le %d et le %d.\n", *a+11,*a+22,*a+28);
     }
 }
+
+void assegnamenti(int *i, int *n, int *giorni, int *gsett, int *a)
+{
+	for (*i = 1; *i <= *n; (*i)++)
+		giorni[*i] = *i;
+
+	for (*i = 1; *i <= *n; (*i)++)
+	{
+		gsett[*i] = formula(&(*a), &(giorni[*i]));
+	}
+
+	for (*i = 1; *i <= *n; (*i)++)
+	{
+		printf("%d", giorni[*i]);
+		printf("\t");
+		printf("%d", gsett[*i]);
+		printf("\n");
+	}
+}

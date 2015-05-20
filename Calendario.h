@@ -41,5 +41,7 @@ extern int CalcoloSettimana(int *g, int *m, int *a);
 
 extern void Prossimi_Uguali(int *a, int *lin);
 
+extern void assegnamenti(int *i, int *n, int *giorni, int *gsett, int *a);
+
 
 #endif /*CALENDARIO_H*/
