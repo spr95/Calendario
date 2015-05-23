@@ -28,7 +28,7 @@ int main(void)
     
     assegnamenti(&i, &n, giorni, gsett, &a);
     
-    creacal(giorni,gsett,mesi,&bis,&a);
+    creacal(giorni,gsett,mesi,&a);
     
     return 0;
 }

@@ -505,11 +505,11 @@ void assegnamenti(int *i, int *n, int *giorni, int *gsett, int *a)
 		gsett[*i] = formula(&(*a), &(giorni[*i]));
 	}
 
-	for (*i = 1; *i <= *n; (*i)++)
+	/*for (*i = 1; *i <= *n; (*i)++)
 	{
 		printf("%d", giorni[*i]);
 		printf("\t");
 		printf("%d", gsett[*i]);
 		printf("\n");
-	}
+	}*/
 }
