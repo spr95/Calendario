@@ -16,7 +16,7 @@ int main (void){
   int nsett;
   int gG=0,mG=0,aG=0;
   long long GG;
-  fprintf(stdout, "Inserisci il giorno del quale vuoi conoscere i dati nel formato GG/MM/AAAA, senza inserire lo zero davanti per i mesi a una sola cifra:" );
+  fprintf(stdout, "Inserisci il giorno del quale vuoi conoscere i dati nel formato GG/MM/AAAA: " );
   fscanf(stdin,"%d%c%d%c%d",&g,&s,&m,&s,&a );
   bis=bisestile(&a);
   ndo=Numerodoro(&a);
