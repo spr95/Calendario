@@ -61,8 +61,10 @@ nsett=CalcoloSettimana(&g,&m,&a);
       case 6: fprintf(stdout, "Il giorno scelto è Venerdì.\n");
       break;
    }
-   
+   if(a>1582)
+   {
    fprintf(stdout,"Il giorno scelto è il %d/%d/%d del calendario giuliano.\n",gG,mG,aG);
+   }
    fprintf(stdout,"Il giorno scelto è il %lld Giorno Giuliano.\n",GG);
    fprintf(stdout,"Il giorno scelto cade nella %d settimana dell'anno\n",nsett);
   
