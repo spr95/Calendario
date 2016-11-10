@@ -502,7 +502,14 @@ void assegnamenti(int *i, int *n, int *giorni, int *gsett, int *a)
 
 	for (*i = 1; *i <= *n; (*i)++)
 	{
-		gsett[*i] = formula(&(*a), &(giorni[*i]));
+        if(*a>1582)
+        {
+            gsett[*i] = formula(&(*a), &(giorni[*i]));
+        }
+        else
+        {
+            gsett[*i] = formulaG(&(*a), &(giorni[*i]));
+        }
 	}
 
 	/*for (*i = 1; *i <= *n; (*i)++)
