@@ -1,6 +1,6 @@
 # Calendario
 Questo programma, Calendario, dà varie informazioni su un anno dato e/o su una data scelta.
-E' al momento disonibile per Linux a 64 bit, a 32 bit e per Windows a 32 bit.
+E' al momento disonibile per Linux a 64 bit, a 32 bit, per Windows a 32 bit, per macOS e per Android.
 Nelle cartelle si trovano i seguenti file:
 
 In Caleanno trovi un programma che genera un calendario per un anno da te scelto.
